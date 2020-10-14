@@ -85,7 +85,11 @@ Once your repository is created, you should always open your **project** rather 
 
   2. Read in the fake garden harvest data. Find the data [here](https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv) and click on the `Raw` button to get a direct link to the data. 
 ```{r}
-
+new_harvest_set <- read_csv("https://raw.githubusercontent.com/llendway/scraping_etc/main/2020_harvest.csv", 
+    col_types = cols(weight = col_number()), 
+    na = "null", skip = 2)
+new_harvest_set %>%
+  select(-X1)
 ```
   
   
