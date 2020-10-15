@@ -12,7 +12,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-#knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
 ```
 
 ```{r libraries}
@@ -75,7 +75,7 @@ Once your repository is created, you should always open your **project** rather 
 
   1. This app will also use the COVID data. Make sure you load that data and all the libraries you need in the `app.R` file you create. Below, you will post a link to the app that you publish on shinyapps.io. You will create an app to compare states' cumulative number of COVID cases over time. The x-axis will be number of days since 20+ cases and the y-axis will be cumulative cases on the log scale (`scale_y_log10()`). We use number of days since 20+ cases on the x-axis so we can make better comparisons of the curve trajectories. You will have an input box where the user can choose which states to compare (`selectInput()`) and have a submit button to click once the user has chosen all states they're interested in comparing. The graph should display a different line for each state, with labels either on the graph or in a legend. Color can be used if needed. 
   
-  
+https://ckollmer01.shinyapps.io/weekly_exercises_6/  
   
 ## Warm-up exercises from tutorial
 
@@ -100,7 +100,7 @@ colors = scales::col_numeric(
       ) %>% as.character()
 ```
 
-![](garden_table.html){width=600, height=1000}
+
 
 
   5. Create a table using `gt` with data from your project or from the `garden_harvest` data if your project data aren't ready.
@@ -170,7 +170,7 @@ garden_harvest %>%
   labs(title = "Total Harvest Weight (g)") -> lettuce_graph_3
 
 lettuce_graph / (lettuce_graph_2|lettuce_graph_3) +
- plot_annotation(title = "Lettuce Harvest ")
+ plot_annotation(title = "Lettuce Harvest ") 
 ```
 
   
